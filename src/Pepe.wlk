@@ -6,7 +6,6 @@ object pepe {
 	method sueldo(){
 		return puesto.sueldo() + bonoXFaltas.bono(faltas) + bonoResultado.bono(puesto.sueldo())
 	}
-	
 	method faltar(){
 		faltas+=1
 	}
