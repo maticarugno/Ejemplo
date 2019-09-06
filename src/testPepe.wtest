@@ -1,17 +1,17 @@
 import Pepe.*
 
-test "testX" {
+test "Pepe falta 3 veces y su sueldo es 1100" {
 	pepe.faltas(3)
-	assert.that(pepe.faltas()==3)
+	assert.equals(1100,pepe.sueldo())
 
 }
 
-test "t2"{
+test "pepe cambia su puesto a cadete"{
 	pepe.cambiarPuesto(cadete)
 	assert.equals(cadete,pepe.puesto())
 }
 
-test "t3"{
+test "pepe falta mucho despues de faltar 6 veces"{
 	pepe.faltas(6)
 	assert.that(pepe.faltoMucho())
 }
