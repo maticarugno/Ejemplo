@@ -1,0 +1,17 @@
+import Pepe.*
+
+test "testX" {
+	pepe.faltas(3)
+	assert.that(pepe.faltas()==3)
+
+}
+
+test "t2"{
+	pepe.cambiarPuesto(cadete)
+	assert.equals(cadete,pepe.puesto())
+}
+
+test "t3"{
+	pepe.faltas(6)
+	assert.that(pepe.faltoMucho())
+}

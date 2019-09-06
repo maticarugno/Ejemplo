@@ -1,6 +1,6 @@
 object pepe {
 	var puesto = gerente
-	var faltas = 0
+	var property faltas = 0
 	var bonoResultado  = porcentaje
 	
 	method sueldo(){
@@ -14,6 +14,12 @@ object pepe {
 	}
 	method cambiarPuesto(nuevoPuesto){
 		puesto = nuevoPuesto
+	}
+	method puesto(){
+		return puesto
+	}
+	method faltoMucho(){
+		return faltas > 5
 	}
 	
 }
