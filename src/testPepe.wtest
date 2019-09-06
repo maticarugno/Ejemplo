@@ -1,4 +1,5 @@
 import Pepe.*
+import TomyJerry.*
 
 test "Pepe falta 3 veces y su sueldo es 1100" {
 	pepe.faltas(3)
@@ -15,3 +16,20 @@ test "pepe falta mucho despues de faltar 6 veces"{
 	pepe.faltas(6)
 	assert.that(pepe.faltoMucho())
 }
+
+test "la energia de tom es 62 despues de comerse a jerry"{
+	tom.comer(jerry)
+	assert.equals(62,tom.energia())
+}
+
+test "la velocidad de tom despues de comer a jerry es 11.2"{
+	tom.comer(jerry)
+	assert.equals(11.2,tom.velocidad())
+}
+
+test "la energia de tom luego de comer a jerry y de correr 10 metros es 57"{
+	tom.comer(jerry)
+	tom.correr(10)
+	assert.equals(57,tom.energia())
+}
+
